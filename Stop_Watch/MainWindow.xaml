@@ -1,0 +1,25 @@
+﻿<Window x:Class="Stop_Watch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stop_Watch"
+        mc:Ignorable="d"
+        Title="Stop Watch Application" Height="450" Width="800" BorderBrush="Red" BorderThickness="3">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Label FontSize="30" FontWeight="Black">Running time:</Label>
+                <Label Name="lblRunning" Width="150" Height="53" Content="00:00:00" Margin="305,78,339,-78" BorderBrush="Black" BorderThickness="3" FontSize="30" HorizontalContentAlignment="Center"></Label>
+                <Label FontSize="30" Margin="0,164,295,-164" FontWeight="Black">Total time:</Label>
+                <Label Name="lblTotal" Width="150" Height="53" Content="00:00:00" Margin="305,222,339,-222" BorderBrush="Red" BorderThickness="3" FontSize="30" HorizontalContentAlignment="Center"></Label>
+                <!--Button-->
+                <Button Margin="27,327,667,-316" Width="100" Name="btnStartStop" FontSize="20" FontWeight="Black" BorderBrush="LightBlue" BorderThickness="3" Click="btnStartStop_Click">Start</Button>
+                
+                <Button Name="btnReset" Width="100" Height="30" FontSize="20" FontWeight="Black" BorderBrush="LightBlue" BorderThickness="3" Margin="330,348,364,-316" Click="btnReset_Click">Reset</Button>
+
+                <Button  Width="100" Name="btnExit" FontSize="20" FontWeight="Black" BorderBrush="LightBlue" BorderThickness="3" Margin="601,327,93,-321" Click="btnExit_Click">Exit</Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
